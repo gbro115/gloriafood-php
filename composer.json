@@ -1,0 +1,35 @@
+{
+    "name": "gbro115/gloriafood-php",
+    "type": "project",
+    "description": "PHP client for the GloriaFood API",
+    "keywords": [
+        "API",
+        "Cluster"
+    ],
+    "authors": [
+        {
+            "name": "George Brownlee",
+            "homepage": "https://github.com/gbro115",
+            "role": "Developer"
+        }
+    ],
+    "repositories":[
+        {
+            "type": "vcs",
+            "url": "git@github.com:gbro115/gloriafood-php.git"
+        }
+    ],
+    "license": "MIT",
+    "require": {
+        "guzzlehttp/guzzle": "^6.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "GloriaFood\\": "src/GloriaFood/"
+        }
+    },
+    "require": {
+        "php": "^7.1",
+        "psr/log": "^1.0.1"
+    }
+}
