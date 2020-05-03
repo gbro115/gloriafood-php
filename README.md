@@ -11,7 +11,7 @@ The recommended way to install the library is using [Composer](https://getcompos
 ```json
 {
     "require": {
-        "gbro115/gloriafood-php: "dev-master"
+        "gbro115/gloriafood-php": "1.1"
     }
 }
 ```
