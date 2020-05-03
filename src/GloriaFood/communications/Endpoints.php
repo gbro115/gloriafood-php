@@ -1,5 +1,5 @@
 <?php
-namespace GloriaFood\Communications;
+namespace GloriaFood\communications;
 /**
  * Endpoints class to build, format and return API endpoint urls based on incoming platform and version
  *
