@@ -52,7 +52,6 @@ class GloriaFood
      * fetchMenu() function
      *
      * @return FetchMenu API
-     * @throws ConfigurationException
      */
     public function fetchMenu()
     {
