@@ -1,5 +1,5 @@
 <?php
-namespace GloriaFood;
+namespace GloriaFood\Api;
 
 class FetchMenu
 {

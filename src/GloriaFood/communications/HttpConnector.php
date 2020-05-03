@@ -1,6 +1,6 @@
 <?php
 
-namespace GloriaFood;
+namespace GloriaFood\Communications;
 
 use GuzzleHttp\Client;
 
