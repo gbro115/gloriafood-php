@@ -1,6 +1,10 @@
 <?php
 namespace GloriaFood\api;
 
+use GloriaFood\communications\Endpoints;
+use GloriaFood\communications\HttpConnector;
+use GloriaFood\Configuration;
+
 class FetchMenu
 {
     /**

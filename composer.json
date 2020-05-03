@@ -20,9 +20,6 @@
         }
     ],
     "license": "MIT",
-    "require": {
-        "guzzlehttp/guzzle": "^6.5"
-    },
     "autoload": {
         "psr-4": {
             "GloriaFood\\": "src/GloriaFood/"
@@ -30,6 +27,8 @@
     },
     "require": {
         "php": "^7.1",
-        "psr/log": "^1.0.1"
+        "psr/log": "^1.0.1",
+        "guzzlehttp/guzzle": "^6.5",
+        "ext-json": "*"
     }
 }

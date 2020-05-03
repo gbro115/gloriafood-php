@@ -2,11 +2,7 @@
 
 namespace GloriaFood;
 
-require_once 'Exception.php';
-require_once 'Configuration.php';
-require_once 'communications/Endpoints.php';
-require_once 'communications/HttpConnector.php';
-require_once 'api/FetchMenu.php';
+use GloriaFood\api\FetchMenu;
 
 class GloriaFood
 {
@@ -29,7 +25,7 @@ class GloriaFood
     /**
      * Constructor
      *
-     * @param $authKey Authorization key obtained from GloriaFood web application
+     * @param $authKey String Authorization key obtained from GloriaFood web application
      */
     public function __construct($authKey)
     {

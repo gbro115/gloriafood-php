@@ -2,6 +2,8 @@
 
 namespace GloriaFood\communications;
 
+use GloriaFood\ApiException;
+use GloriaFood\ConnectorException;
 use GuzzleHttp\Client;
 
 class HttpConnector
