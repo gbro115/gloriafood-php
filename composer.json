@@ -29,6 +29,8 @@
         "php": "^7.1",
         "psr/log": "^1.0.1",
         "guzzlehttp/guzzle": "^6.5",
-        "ext-json": "*"
+        "ext-json": "*",
+        "nesbot/carbon": "^2.41",
+        "phpunit/phpunit": "^9.4"
     }
 }
