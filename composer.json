@@ -30,7 +30,7 @@
         "psr/log": "^1.0.1",
         "guzzlehttp/guzzle": "^6.5|^7.0",
         "ext-json": "*",
-        "nesbot/carbon": "^2.41",
+        "nesbot/carbon": "^2.17.0",
         "phpunit/phpunit": "^9.4"
     }
 }
