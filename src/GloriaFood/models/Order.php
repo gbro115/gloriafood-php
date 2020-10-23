@@ -259,7 +259,7 @@
 			$i->setTaxName($json->tax_name);
 			$i->setCoupons($json->coupons);
 			$i->setReference($json->reference);
-
+			$i->setSource($json->source);
 			$i->setClient(Client::withJson($json));
 
 			foreach($json->tax_list as $tax)
