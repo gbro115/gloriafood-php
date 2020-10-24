@@ -1,8 +1,10 @@
 <?php
 
-	namespace GloriaFood\models;
+	namespace Test\GloriaFood\models;
 
 	use Carbon\Carbon;
+	use GloriaFood\models\Item;
+	use GloriaFood\models\Order;
 	use PHPUnit\Framework\TestCase;
 
 	class OrderTest extends TestCase

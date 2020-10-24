@@ -1,7 +1,8 @@
 <?php
 
-	namespace GloriaFood\models;
+	namespace Test\GloriaFood\models;
 
+	use GloriaFood\models\Item;
 	use PHPUnit\Framework\TestCase;
 
 	class ItemTest extends TestCase

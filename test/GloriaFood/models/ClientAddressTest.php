@@ -1,7 +1,8 @@
 <?php
 
-	namespace GloriaFood\models;
+	namespace Test\GloriaFood\models;
 
+	use GloriaFood\models\ClientAddress;
 	use PHPUnit\Framework\TestCase;
 
 	class ClientAddressTest extends TestCase
@@ -54,6 +55,6 @@ JSON);
     }
 JSON;
 
-			$this->assertTrue($expected == ClientAddress::withJson(json_decode($json)));
+			$this->assertEquals($expected, ClientAddress::withJson(json_decode($json)));
 		}
 	}

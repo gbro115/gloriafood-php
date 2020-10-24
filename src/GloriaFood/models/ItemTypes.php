@@ -3,7 +3,6 @@
 
 	namespace GloriaFood\models;
 
-
 	class ItemTypes
 	{
 		const FOOD_ITEM = 'item';
