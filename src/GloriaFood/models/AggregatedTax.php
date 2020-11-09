@@ -3,15 +3,16 @@
 
 	namespace GloriaFood\models;
 
+	use JsonSerializable;
 
-	class AggregatedTax
+	class AggregatedTax implements JsonSerializable
 	{
 		private $type;
 		private $value;
 		private $rate;
 
 		/**
-		 * @param $json
+		 * @param $tax
 		 * @return AggregatedTax
 		 */
 		public static function withJson($tax)
@@ -86,4 +87,13 @@
 			$this->value = $value;
 		}
 
+		public function jsonSerialize()
+		{
+			return [
+				'rate'=>$this->getRate(),
+				'type'=>$this->getType(),
+				'value'=>$this->getValue()
+			];
+		}
+		
 	}
