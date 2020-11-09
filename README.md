@@ -11,7 +11,7 @@ The recommended way to install the library is using [Composer](https://getcompos
 ```json
 {
     "require": {
-        "gbro115/gloriafood-php": "1.1"
+        "gbro115/gloriafood-php": "<your-required-version>"
     }
 }
 ```
@@ -25,9 +25,10 @@ composer install
 require 'vendor/autoload.php';
 ```
 
-## Limitations 
+## Functionality offered by this package
 
-Only the fetch menu API has been implemented, and only in JSON.
+- Use this packaged to retrieve a menu from the GloriaFood Fetch Menu API
+- Parse the JSON body of an Accepted Orders payload into a PHP object
  
 ## Handling Exceptions
 
