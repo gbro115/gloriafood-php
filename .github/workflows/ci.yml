@@ -12,11 +12,5 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           php-version: '7.3'
+          tools: composer:v2, phpunit
           coverage: xdebug
-      - uses: php-actions/composer@master
-      - name: PHPUnit Tests
-        uses: php-actions/phpunit@v9
-        with:
-          bootstrap: vendor/autoload.php
-          configuration: phpunit.xml
-          args: --coverage-text
