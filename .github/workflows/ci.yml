@@ -9,6 +9,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: php-actions/composer@master
+      - name: Xdebug Action
+        uses: MilesChou/docker-xdebug@v1.1.0        
       - name: PHPUnit Tests
         uses: php-actions/phpunit@v9
         with:
