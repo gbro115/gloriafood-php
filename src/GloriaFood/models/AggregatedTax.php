@@ -95,5 +95,5 @@
 				'value'=>$this->getValue()
 			];
 		}
-		
+
 	}
