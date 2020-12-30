@@ -72,7 +72,7 @@
 			$c->setAcceptsMarketing($json->client_marketing_consent ?? false);
 			$c->setLanguage($json->client_language ?? null);
 
-			if(array_key_exists('client_address_parts', $json))
+			if(isset($json->client_address_parts))
 			{
 				$a = ClientAddress::withJson($json);
 				$c->setAddress($a);
