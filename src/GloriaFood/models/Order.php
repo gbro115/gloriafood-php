@@ -213,6 +213,12 @@
 		 */
 		protected $type;
 
+		/**
+		 * @var string
+		 */
+		protected $card_type;
+
+		protected $raw_json;
 
 		public function __construct() {
 			$this->tax_list = [];
@@ -261,6 +267,8 @@
 			$i->setReference($json->reference);
 			$i->setSource($json->source);
 			$i->setClient(Client::withJson($json));
+			$i->setCardType($json->card_type ?? null);
+			$i->setRawJson($json);
 
 			foreach($json->tax_list as $tax)
 			{
@@ -960,6 +968,43 @@
 				}
 			}
 			return $filtered_array;
+		}
+
+		/**
+		 * @return ?string
+		 */
+		public function getCardType(): ?string
+		{
+			return $this->card_type;
+		}
+
+		/**
+		 * @param ?string $card_type
+		 */
+		public function setCardType(?string $card_type): void
+		{
+			$this->card_type = $card_type;
+		}
+
+		public function setRawJson($json)
+		{
+			$this->raw_json = $json;
+		}
+
+		/**
+		 * @param $key
+		 * @return mixed
+		 */
+		public function getFromJson($key)
+		{
+			if(isset($json->{$key}))
+			{
+				return $json->{$key};
+			}
+			else
+			{
+				return null;
+			}
 		}
 
 	}

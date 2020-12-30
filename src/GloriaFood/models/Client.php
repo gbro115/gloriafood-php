@@ -51,6 +51,12 @@
 		protected $accepts_marketing;
 
 		/**
+		 * Language the food client used when placing this order. (ISO 639-1 format)
+		 * @var string
+		 */
+		protected $language;
+
+		/**
 		 * @param $json
 		 * @return Client
 		 */
@@ -64,6 +70,7 @@
 			$c->setPhone($json->client_phone);
 			$c->setAddressLegacy($json->client_address ?? '');
 			$c->setAcceptsMarketing($json->client_marketing_consent ?? false);
+			$c->setLanguage($json->client_language ?? null);
 
 			if(array_key_exists('client_address_parts', $json))
 			{
@@ -200,6 +207,22 @@
 		public function setAcceptsMarketing(bool $accepts_marketing): void
 		{
 			$this->accepts_marketing = $accepts_marketing;
+		}
+
+		/**
+		 * @return ?string
+		 */
+		public function getLanguage(): ?string
+		{
+			return $this->language;
+		}
+
+		/**
+		 * @param ?string $language
+		 */
+		public function setLanguage(?string $language): void
+		{
+			$this->language = $language;
 		}
 
 
