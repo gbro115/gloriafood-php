@@ -27,8 +27,8 @@ require 'vendor/autoload.php';
 
 ## Functionality offered by this package
 
-- Use this packaged to retrieve a menu from the GloriaFood Fetch Menu API
-- Parse the JSON body of an Accepted Orders payload into a PHP object
+- Retrieve a menu from the GloriaFood Fetch Menu API
+- Parse the JSON body of an Accepted Orders payload into an object
  
 ## Handling Exceptions
 
